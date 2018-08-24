@@ -1,0 +1,182 @@
+/* 
+ Ndinga Oba Riki 
+ Evaluation Html-Css-JS
+
+ Feuille de style pincipale 
+*/
+
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+   html, body, div, soan, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+   abbr, acronym, address, big, cite, code, dek, dfn, em, img, ins,kbd, q, s, samp, small, strike, 
+   sub, sup, tt, var, b, u, i, center, dl,dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+   caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+   footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+       text-decoration: none;
+   }
+
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+
+/* ----------------------
+       NAV
+---------------------- */
+nav {
+    background-color: #061339;
+}
+nav a{
+    font-family: 'Merienda', cursive;
+}
+
+.navContainer{
+    width: 70%;
+    display: block;
+    margin: 0 auto
+}
+
+
+#subnav{
+    background-color: #B9CDFF; 
+    background: url("../img/background.jpg") repeat-x ;
+    text-align: center;
+    padding: 70px 0;
+    font-family: 'Merienda', cursive;
+    color: #fff;
+}
+#subnav h1{font-size: 1.85em;}
+
+
+/* ----------------------
+       Block section 1
+---------------------- */
+section .containerSection{
+    width: 70%;
+    margin: 0 auto;
+}
+#block1, #block2{
+   background:#eee;
+   padding:30px 1rem; 
+   padding-bottom: 24px
+}
+
+#block1 .form{ 
+    text-align: center;
+    padding: 20px 0;
+}
+#block1 img{
+    width: 100%;
+}
+
+#block1 .slide{padding-right:0} 
+.carousel-item h5{
+    font-size: 1.4em; 
+}
+.form h2{
+    color: #2F4073;
+    font-family: 'Merienda', cursive;
+    font-size: 1.1em;
+} 
+
+.form-group{ text-align: left}
+.form-group label{ 
+    margin: 10px 0;
+    font-weight: bold;
+}
+.btn-primary{
+    background-color: green;
+    border-color: green;
+    width: 100%;
+} 
+
+.btn-primary:hover{ 
+    background-color: #061339;
+    border-color: #061339;
+}
+
+
+/* ----------------------
+       Block section 2
+---------------------- */
+
+#block2{
+    background:#ccc;
+}
+
+#block2 .text_content h2{
+    font-family: 'Merienda', cursive;
+    font-size: 1.5em;
+    color: #2F4073;
+    margin-bottom: 15px;
+}
+
+#block2 .text_content p{
+    line-height: 1.1em;
+    margin-bottom: 10px;
+}
+
+.left_section {
+    padding: 0;
+    cursor: pointer;
+}
+
+.left_section img { 
+    width: 100%;
+    height: auto;
+    float: right;
+    filter: invert(10%);
+    margin-top: -30px;
+    background: #7885A5;
+}
+
+
+/* ----------------------
+       footer
+---------------------- */
+
+footer{
+   background: #061339; 
+   color: #fff;
+   padding: 10px 0;
+   height: 38px;
+   display: block;
+}
+
+footer p{
+    float: right;         
+    margin-right: 25px;
+}
+
+
+/* ----------------------
+       Responsive
+---------------------- */
+
+@media screen and (max-width: 736px){ 
+    #block1 .slide {
+        padding-right: inherit;
+    }
+    #subnav h1 { font-size: 1.5em}
+
+    #block1 .row {
+    flex-direction: column-reverse;
+    }
+
+    section .containerSection, .navContainer{
+         width: 90%;
+    }
+
+}
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oh MyCats!</title>
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <!-- Font awesome CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+<body>
+
+
+    <section id="block1">
+        <div class="containerSection">
+            <div class="row">
+                <div class="col-md-3 form">
+                   <h2>Les chats à adopter</h2>
+
+                   <form id="getCat">
+                      
+                        <div class="form-group">
+                          <label for="selectChat"> Choix du chat :</label>
+                          <select class="form-control" id="selectChat" >
+                            <option value="" disabled selected>- Sélectionnez -</option>
+                            <option value ="sushi">Sushi</option>
+                            <option value ="Maki">Maki</option>
+                            <option value ="Sashimi">Sashimi</option>
+                            <option value ="Yakitori">Yakitori</option>
+                            <option value ="sushi">Onigri</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="reasonToAdopt">Raison d'adoption :</label>
+                          <textarea class="form-control" id="reasonToAdopt" rows="11" placeholder="Saisissez ici les raisons pour lesquelles vous souhaitez adopter ce chat..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
+                      </form>
+
+                </div>
+              
+                    <!--<img class="img-fluid" src="./assets/img/chat_1.jpg" alt="Sushi">-->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+    <!-- Intégration de jQuery avec un CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    
+    <!-- Poppers JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+
+    <!-- Intégration de notre fichier JS -->
+    <script src="./assets/js/evalCats.js"></script>
+
+</body>
+</html>
