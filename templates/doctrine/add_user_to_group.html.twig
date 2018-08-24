@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form method="post">
+        {#
+          ajouter une lister déroulante pour tous les utilisateurs
+        #}
+        <div class="form-group">
+            <select name="user">
+                {% for user in users %}
+                 {# pour afficher uniquement les users qui n'appartients pas au groupe#}
+                {% if not group.users.contains(user) %}
+                <option value="{{ user.id}}">{{ user }}</option>
+                {% endif %}
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <button type="submit">Enregistrer</button>
+        </div>
+    </form>
+{% endblock %}

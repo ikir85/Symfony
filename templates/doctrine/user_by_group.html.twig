@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ dump(group.users) }}
+    <table>
+        <caption>Utilisateurs du group "{{ group.name }}"</caption>
+    </table>
+    <th>Utilisateur</th>
+    </tr>
+    {% for user in group.users %}
+        <tr>
+            <td>{{ user }}</td>
+        </tr>
+    {% endfor %}
+
+{% endblock %}

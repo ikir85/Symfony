@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table  class="table table-bordered table-light">
+        <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Titre</th>
+            <th>Contenu</th>
+            <th>Auteur</th>
+        </tr>
+        </thead>
+        {% for publication in publications %}
+            <tr>
+                <td>{{ publication.id}}</td>
+                <td>{{ publication.title }}</td>
+                <td>{{ publication.content}}</td>
+                {# On peut se permettre d'afficher l'auteur directement parce que la classe user
+                contient une méthode --toString ()
+                #}
+                <td>{{ publication.author }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4" style="text-align: center">Aucune publication</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

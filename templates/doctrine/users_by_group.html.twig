@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table>
+        <caption>Utilisateurs du group "{{ group.name }}"</caption>
+    </table>
+    <th>
+        <th>Utilisateur</th>
+    </tr>
+    {% for user in group.users %}
+    <tr>
+        <td></td>
+    </tr>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <table  class="table table-bordered table-light">
+        <caption>Publication de {{ user }}</caption>
+        <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Titre</th>
+            <th>Contenu</th>
+        </tr>
+        </thead>
+        {% for publication in user.publications %}
+            <tr>
+                <td>{{ publication.id}}</td>
+                <td>{{ publication.title }}</td>
+                <td>{{ publication.content}}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4" style="text-align: center">Aucune publication</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

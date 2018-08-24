@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form method="post" class="cr_user">
+        <div class="form-group">
+            <label>Nom</label>
+            <input type="text" name="lastname" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Prénom</label>
+            <input type="text" name="firstname" class="form-control">
+        </div >
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Date de naissance</label>
+            <input type="text" name="birthdate" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Titre de la publication</label>
+            <input type="text" name="title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Contenu de la publication</label>
+            <textarea name="content" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+        </div>
+    </form>
+{% endblock %}
